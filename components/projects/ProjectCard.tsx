@@ -8,9 +8,10 @@ interface ProjectCardProps {
   description: string;
   image: string;
   tech: string[];
+  liveUrl?: string;
 }
 
-export default function ProjectCard({ title, description, image, tech }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, tech, liveUrl }: ProjectCardProps) {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const ctrls = useAnimation();
@@ -48,6 +49,18 @@ export default function ProjectCard({ title, description, image, tech }: Project
             </span>
           ))}
         </motion.div>
+
+        {liveUrl && (
+          <motion.a
+            variants={projectCardTechAnimation}
+            href={liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex w-fit rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-85"
+          >
+            Visit Website
+          </motion.a>
+        )}
 
       </div>
 

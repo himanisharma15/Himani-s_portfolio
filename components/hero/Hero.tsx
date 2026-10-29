@@ -51,9 +51,9 @@ export default function Hero({ paused = false }: { paused?: boolean }) {
           <div className="absolute left-1/2 top-[12%] z-10 w-full max-w-full -translate-x-1/2 px-2 sm:top-[8%] sm:px-0 lg:top-[7%]">
             <h1 className="w-full text-center text-[clamp(1.75rem,5.5vw,5rem)] font-black leading-[0.9] tracking-[-0.055em]">
               <span className="block whitespace-normal sm:whitespace-nowrap">
-                I&apos;m <span className="text-primary">Marcello</span>,
+                Hi, I&apos;m <span className="text-primary">Himani Sharma</span>
               </span>
-              <span className="mt-2 block whitespace-normal sm:mt-4 sm:whitespace-nowrap">Full-Stack Developer</span>
+              <span className="mt-2 block whitespace-normal sm:mt-4 sm:whitespace-nowrap">Full-stack Developer</span>
             </h1>
           </div>
 
@@ -64,8 +64,8 @@ export default function Hero({ paused = false }: { paused?: boolean }) {
 
           <div className="absolute bottom-0 left-1/2 z-[100] h-[60%] max-h-[480px] w-[min(82vw,420px)] -translate-x-1/2 sm:h-[68%] sm:max-h-[620px] sm:w-[min(55vw,520px)] lg:h-[72%] lg:max-h-[760px] lg:w-[min(40vw,650px)]">
             <Image
-              src="/images/Me.png"
-              alt="Marco Marcello Hugo"
+              src="/images.png"
+              alt="Himani"
               fill
               priority
               sizes="(max-width: 639px) 82vw, (max-width: 1023px) 55vw, 650px"

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const projectFeatures = [
   { image: "/images/Personal.png", title: "Portfolio Website", description: "Responsive portfolio with theme switching, motion effects, project showcases, and direct email contact." },
-  { image: "/images/CVMaker.png", title: "CV Maker", description: "Form-based CV creation with structured layouts, content preview, and downloadable document output." },
-  { image: "/images/Castafest.jpg", title: "Castafest Event Website", description: "Responsive event website with clear information hierarchy and participant-focused navigation." },
+  { image: "/images/Personal1.png", title: "Zaika Hubb", description: "Responsive food ordering platform built with React.js and dynamic food listings.", liveUrl: "https://zaikahubb.netlify.app/" },
+  { image: "/images/Personal2.png", title: "Hyderabad AC Services", description: "React booking website with dynamic service pages, forms, and interactive navigation.", liveUrl: "https://hyderabad-ac-services-sooty.vercel.app/" },
 ];
 
 export default function ProjectPage() {
@@ -38,7 +38,7 @@ export default function ProjectPage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {projectFeatures.map(({ image, title, description }) => (
+            {projectFeatures.map(({ image, title, description, liveUrl }) => (
               <article
                 key={title}
                 className="group overflow-hidden rounded-3xl border border-white/50 bg-background/80 shadow-[0_20px_50px_-30px_rgba(15,23,42,0.45)] backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1 dark:border-white/10 dark:bg-card/80"
@@ -59,6 +59,16 @@ export default function ProjectPage() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {description}
                   </p>
+                  {liveUrl && (
+                    <a
+                      href={liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-85"
+                    >
+                      Visit Website
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

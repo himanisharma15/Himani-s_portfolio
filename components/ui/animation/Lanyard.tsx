@@ -23,6 +23,7 @@ import * as THREE from "three";
 
 const cardGLB = "/assets/lanyard/card.glb";
 const lanyard = "/assets/lanyard/lanyard.png";
+const profileImage = "/images-card.png";
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -131,6 +132,7 @@ function Band({ maxSpeed = 100, minSpeed = 50 }: BandProps) {
 
   const { nodes, materials } = useGLTF(cardGLB) as unknown as CardModel;
   const texture = useTexture(lanyard);
+  const profileTexture = useTexture(profileImage);
   const [curve] = useState(
     () =>
       new THREE.CatmullRomCurve3([
@@ -285,7 +287,7 @@ function Band({ maxSpeed = 100, minSpeed = 50 }: BandProps) {
           >
             <mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial
-                map={materials.base.map}
+                map={profileTexture}
                 map-anisotropy={4}
                 clearcoat={1}
                 clearcoatRoughness={0.15}

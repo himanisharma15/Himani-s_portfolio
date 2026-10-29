@@ -7,23 +7,26 @@ export const projects = [
       "A personal portfolio website that showcases my skills, projects, and experiences. This project was created using React, TypeScript, Next.js, and TailwindCSS.",
     image: "/images/Personal.png",
     tech: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+    liveUrl: "http://localhost:3000",
   },
   {
     id: 2,
     slug: "project-2",
-    title: "CV Maker",
+    title: "Zaika Hubb – Food Delivery Website",
     description:
-      "A simple CV maker website that allows users to create and download their CVs in PDF format. This project was created using HTML and CSS.",
-    image: "/images/CVMaker.png",
-    tech: ["HTML", "CSS"],
+      "A responsive food ordering platform built with React.js, reusable components, routing, interactive user interfaces, and dynamic food listings.",
+    image: "/images/Personal1.png",
+    tech: ["React.js", "JavaScript", "REST APIs"],
+    liveUrl: "https://zaikahubb.netlify.app/",
   },
   {
     id: 3,
     slug: "project-3",
-    title: "Castafest Website",
+    title: "Hyderabad AC Services – React Web Application",
     description:
-      "A website created for the Castafest event, an annual event held by Amsa-Undip. This website was created using WIX.",
-    image: "/images/Castafest.jpg",
-    tech: ["WIX", "JavaScript"],
+      "A responsive AC service booking website with dynamic service pages, booking forms, reusable components, React Router, JavaScript, and Framer Motion navigation.",
+    image: "/images/Personal2.png",
+    tech: ["React.js", "React Router", "Framer Motion"],
+    liveUrl: "https://hyderabad-ac-services-sooty.vercel.app/",
   },
-]
+];

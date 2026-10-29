@@ -12,6 +12,7 @@ interface Project {
   tags: string[];
   category: 'Web Development' | 'UI/UX' | 'Other';
   imageUrl?: string; // optional thumbnail
+  liveUrl?: string;
 }
 
 const filters: Array<{ label: string; value: Project['category'] | 'All' }> = [
@@ -34,21 +35,23 @@ const projects: Project[] = [
   },
   {
     id: 'Web-2',
-    title: 'CV Maker',
+    title: 'Zaika Hubb – Food Delivery Website',
     year: 2024,
-    description: 'A simple CV maker website that allows users to create and download their CVs in PDF format. This project was created using HTML and CSS.',
-    tags: ['HTML', 'CSS'],
+    description: 'A responsive food ordering platform built with React.js, reusable components, routing, interactive user interfaces, and dynamic food listings.',
+    tags: ['React.js', 'JavaScript', 'REST APIs'],
     category: 'Web Development',
-    imageUrl: '/images/CVMaker.png',
+    imageUrl: '/images/Personal1.png',
+    liveUrl: 'https://zaikahubb.netlify.app/',
   },
   {
     id: 'Web-3',
-    title: 'Castafest Website',
+    title: 'Hyderabad AC Services – React Web Application',
     year: 2024,
-    description: 'A website created for the Castafest event, an annual event held by Amsa-Undip. This website was created using WIX.',
-    tags: ['WIX', 'Javascript'],
+    description: 'A responsive AC service booking website with dynamic service pages, booking forms, reusable components, React Router, JavaScript, and Framer Motion navigation.',
+    tags: ['React.js', 'React Router', 'Framer Motion'],
     category: 'Web Development',
-    imageUrl: '/images/Castafest.jpg',
+    imageUrl: '/images/Personal2.png',
+    liveUrl: 'https://hyderabad-ac-services-sooty.vercel.app/',
   },
   {
     id: 'UI-1',
@@ -141,6 +144,16 @@ const OtherProjectsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
+                {proj.liveUrl && (
+                  <a
+                    href={proj.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-85"
+                  >
+                    Visit Website
+                  </a>
+                )}
               </div>
             </div>
           ))}

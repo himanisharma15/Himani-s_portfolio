@@ -21,7 +21,7 @@ export default function About() {
 
         <div className="w-full flex flex-col items-center justify-center text-center mt-12 mb-8">
           <GradientText className="text-heading-xl">
-            HOLLA, AMIGO!
+            Hi, I&apos;m Himani Sharma
           </GradientText>
         </div>
 
@@ -40,7 +40,7 @@ export default function About() {
                 return `top ${header?.getBoundingClientRect().height ?? 0}px`;
               }}
             >
-              My name is Marco Marcello Hugo. I am a Full-Stack Developer with four years of experience in web and mobile application development, with a primary focus on Front-End Development. I have experience building responsive user interfaces, developing features, integrating APIs, debugging, and maintaining clean, scalable code, while using Git for version control and Jira for ticketing, backlog management, progress tracking, and handling technical documentation and project requirements.
+              I am an aspiring MERN Stack Developer with hands-on experience in React.js, Node.js, Express.js, and MongoDB. I enjoy building responsive and user-friendly web applications and working on real-world projects. I have experience integrating REST APIs, handling forms, implementing CRUD operations, and using Git and GitHub for version control. I am passionate about full-stack development and continuously improving my problem-solving skills.
             </ScrollReveal>
             <div className="mt-6">
               <Link href="/profile">
@@ -54,8 +54,8 @@ export default function About() {
           {/* Gambar */}
           <div className="flex w-full items-center justify-center md:w-1/2 md:justify-end">
             <TiltedCard
-              imageSrc="/images/Profile.png"
-              altText="Marco Marcello Hugo"
+              imageSrc="/images.png"
+              altText="Himani Sharma"
               captionText="Stop staring at me!"
             />
           </div>

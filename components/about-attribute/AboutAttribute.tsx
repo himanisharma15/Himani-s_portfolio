@@ -1,5 +1,4 @@
 import ParallaxText from "@/components/about-attribute/ParallaxText"
-import ParallaxPhotoGallery from "@/components/about-attribute/ParallaxPhotoGallery"
 import SkillCardStack from "@/components/about-attribute/Stack"
 import GradientText from "@/components/ui/text/AnimateSubtitle"
 
@@ -14,14 +13,12 @@ export default function AboutAttribute() {
             Freelance Full-stack Web Developer
           </ParallaxText>
 
-          <ParallaxPhotoGallery/>
-
           <div className="mt-20 flex w-full flex-col items-center justify-center text-center sm:mt-28">
             <GradientText className="text-[clamp(1.6rem,4vw,3rem)] font-semibold leading-[1.5]">
-              TECH STACK
+              SKILLS
             </GradientText>
             <span className="text-[clamp(1rem,2vw,1.5rem)] font-semibold leading-[1.4]">
-              TECHNOLOGIES & TOOLS
+              TECHNICAL SKILLS
             </span>
           </div>
           <SkillCardStack/>

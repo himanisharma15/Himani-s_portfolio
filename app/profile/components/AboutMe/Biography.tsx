@@ -10,39 +10,16 @@ export default function StoryOfMyLife() {
     <section className=" flex items-center justify-center px-4">
       <div className="max-w-[1200px] ">
         <p className="text-justify text-lg leading-relaxed">
-          <a
-            href="#"
-            className="text-primary hover:underline"
-          >
-            Marco Marcello Hugo
-          </a>{" "}
-          (born January 15, 2004), better known as Marco, is a
-          <span className="text-primary text-lg"> Fullstack Developer </span>
-          specializing in Frontend Development. My interest in programming and
-          computers began in collage when I discovered Debian OS. Known for
-          My computer skills, I learned C++ from a friend in senior high
-          school and honed my abilities through self-study…
+          Hi, I&apos;m <span className="text-primary text-lg">Himani Sharma</span>, a 3rd-year BCA student at <span className="text-primary text-lg">Eternal University, Baru Sahib</span>, from Himachal Pradesh. I am an aspiring <span className="text-primary text-lg">MERN Stack Developer</span> with a strong interest in building modern and user-friendly web applications.
         </p>
 
         {expanded && (
           <div className="text-justify text-lg mt-4 space-y-4">
             <p>
-              In 2017–2018, I was active in the <span className="text-primary text-lg">SMPN 84 Jakarta Student Council</span> as <span className="text-primary text-lg">Deputy Chairperson 1</span>.
-              I helped design and implement extracurricular plenary meetings, coordinate divisions in compiling work programs, and ensure that every activity was carried out on time and according to the direction of the Student Council supervisor.
-              At the same time, I also studied <span className="text-primary text-lg">Taekwondo intensively—training five times a week</span>, participating in <span className="text-primary text-lg">sub-district and city-level championships</span>, and successfully earning <span className="text-primary text-lg">a blue belt in less than a year</span>. This experience instilled discipline, focus, and a high competitive spirit in every aspect of my activities.
+              I have hands-on experience with <span className="text-primary text-lg">HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB</span>. During my frontend internship, I worked on real-world web development projects and gained experience in creating responsive interfaces and working with development teams.
             </p>
             <p>
-              In 2020–2021, I served as <span className="text-primary text-lg">Deputy Chairperson 1 of MPK SMAN 3 Bekasi</span>, coordinating internal and external meetings, evaluating work program achievements, and monitoring fundraising commissions to community service; in the <span className="text-primary text-lg">period of October–December 2021</span>,
-              I also worked <span className="text-primary text-lg">part-time as a barista & server at Kopi Tala Bekasi</span>, preparing drinks according to standards, maintaining the cleanliness of the area, and serving customers in a friendly and efficient manner—the experience honed my leadership, time management, and communication skills.
-            </p>
-            <p>
-              From August 2022 to now, I am studying <span className="text-primary text-lg">Informatics Engineering</span> at <span className="text-primary text-lg">Institut Teknologi Sepuluh Nopember</span> Surabaya—in the first year I built my academic foundation while becoming <span className="text-primary text-lg">a producer of the 2022 class profile video</span>,
-              in 2023 I focused on core courses while being active in various committees such as <span className="text-primary text-lg">BEM ITS and Schematics ITS</span>, in 2024 I was involved in a development project and was selected as<span className="text-primary text-lg">the Man of LKMM-TM BEM FEB Unesa</span>,
-              and in 2025 I deepened my technical skills through<span className="text-primary text-lg">projects and independent studies</span> to qualify for an internship—this experience honed my technical, collaboration, and leadership skills.
-            </p>
-            <p>
-              I continues to improve his programming skills and knowledge, always striving for
-              higher achievements in his career.
+              I enjoy learning new technologies, solving programming problems, and turning ideas into functional web applications. My goal is to grow as a full-stack developer and build applications that solve real-world problems.
             </p>
           </div>
         )}
